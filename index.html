@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robin Lesaana | IT Student Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="aurora"><span></span><span></span><span></span></div>
+  <canvas id="network"></canvas>
+
+  <header class="nav">
+    <a href="#home" class="logo">RB.</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">Hello, I'm</p>
+        <h1>Robin Lesaana</h1>
+        <p class="role">I am a <span id="typing"></span><span class="cursor">|</span></p>
+        <p class="lead">Third-year Information Technology student who enjoys building web apps, solving problems and learning how systems fit together.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn ghost" href="#contact">0742679652</a>
+        </div>
+      </div>
+
+      <div class="avatar-wrap">
+        <div class="orbit o1"><i></i></div>
+        <div class="orbit o2"><i></i></div>
+        <div class="ring"></div>
+        <!-- Put your photo in this folder as profile.jpg -->
+        <img id="avatar" src="pictures/OIP.jpg" alt="Profile picture of Your Name">
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About me</h2>
+      <div class="glass about">
+        <p>I am a third-year IT student. I work with HTML, CSS, JavaScript, databases and networking, and I like turning classroom ideas into things people can actually use. Replace this paragraph with your own story.</p>
+        <table class="data">
+          <tbody>
+            <tr><th>Full Name</th><td>Robin Lesaana</td></tr>
+            <tr><th>Course</th><td>Bachelor of Science in Information Technology</td></tr>
+            <tr><th>Year</th><td>Third year</td></tr>
+            <tr><th>Location</th><td>Samburu, Kenya</td></tr>
+            <tr><th>Interests</th><td>Web development, databases, Software Engineering</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="glass">
+        <table class="data">
+          <thead><tr><th>Skill</th><th>Category</th><th>Level</th></tr></thead>
+          <tbody>
+            <tr><td>HTML &amp; CSS</td><td>Front-end</td><td><div class="bar" data-level="90"><b></b></div></td></tr>
+            <tr><td>JavaScript</td><td>Front-end</td><td><div class="bar" data-level="75"><b></b></div></td></tr>
+            <tr><td>Python</td><td>Programming</td><td><div class="bar" data-level="70"><b></b></div></td></tr>
+            <tr><td>SQL &amp; MySQL</td><td>Databases</td><td><div class="bar" data-level="80"><b></b></div></td></tr>
+            <tr><td>Networking</td><td>Infrastructure</td><td><div class="bar" data-level="65"><b></b></div></td></tr>
+            <tr><td>Git &amp; GitHub</td><td>Tools</td><td><div class="bar" data-level="70"><b></b></div></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="glass">
+        <table class="data">
+          <thead><tr><th>Year</th><th>Institution</th><th>Qualification</th></tr></thead>
+          <tbody>
+            <tr><td>2025 – Present</td><td>Africa International University</td><td>BSc Information Technology</td></tr>
+            <tr><td>2020 – 2023</td><td>Kirisia Secondary School</td><td>Secondary Certificate</td></tr>
+            <tr><td>2026</td><td>Online Course</td><td>Web Development Certificate</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="glass">
+        <table class="data">
+          <thead><tr><th>Project</th><th>Description</th><th>Tech</th><th>Link</th></tr></thead>
+          <tbody>
+            <tr><td>Student Records System</td><td>Add, search and update student records.</td><td>PHP, MySQL</td><td><a href="#">View</a></td></tr>
+            <tr><td>Weather Dashboard</td><td>Shows live forecasts for any city.</td><td>JavaScript, API</td><td><a href="#">View</a></td></tr>
+            <tr><td>Library Database</td><td>Relational design for books and borrowers.</td><td>SQL</td><td><a href="#">View</a></td></tr>
+            <tr><td>Office LAN Design</td><td>Network plan with subnets and security.</td><td>Cisco Packet Tracer</td><td><a href="#">View</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="glass contact">
+        <table class="data">
+          <tbody>
+            <tr><th>Email</th><td><a href="mailto:robinlesaana@.com">robinlesaana@gmail.com</a></td></tr>
+            <tr><th>Phone</th><td>+254 742 679 652</td></tr>
+            <tr><th>GitHub</th><td><a href="https://github.com/"><github class="/Keri847"></Keri847></a></td></tr>
+            <tr><th>LinkedIn</th><td><a href="https://linkedin.com/">linkedin.com/in/Robin Lesaana</a></td></tr>
+          </tbody>
+        </table>
+        <div class="msg">
+          <input id="name" type="text" placeholder="Your name">
+          <textarea id="text" rows="4" placeholder="Your message"></textarea>
+          <button id="send" class="btn primary">Send message</button>
+          <p id="status" role="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Robin Lesaana. Built with HTML, CSS and JavaScript.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
